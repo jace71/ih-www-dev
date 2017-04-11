@@ -1,0 +1,3 @@
+<!--<a  class="button button-primary button-large js-add-api-key">--><?php //echo _e('Add', 'contently') ?><!--</a>-->
+<!--<a  class="button button-primary button-large js-update-api-keys">--><?php //echo _e('Update API Keys', 'contently') ?><!--</a>-->
+<!--<img src="--><?php //echo admin_url() ?><!--/images/wpspin_light-2x.gif" style="width: 2%; padding-left: 5px; display:none;" id="loader_img">-->

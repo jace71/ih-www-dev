@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script>
+            $.ajax({
+                type: "GET",
+                url: "https://api.contently.com/v1/stories",
+                beforeSend: function(xhr) { 
+                    xhr.setRequestHeader("Contently-Api-Key", "e1407698732ae2bdf5b445a32c144c5b");
+                },
+                dataType: 'jsonp',
+                headers: {
+                    "Contently-Api-Key" : "e1407698732ae2bdf5b445a32c144c5b"
+                },
+                success: function(data) {
+                    $('.content').text(data);
+                },
+                error: function(err){
+                    $('.content').text('Cannot connect: ' + err);
+                }
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Contently Test</h1>
+
+        <div class="content">
+
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using the Curata API</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                console.log('Document Ready');
+                
+                $(document).on('click','a.feed',function(evt){
+                    evt.preventDefault();
+                    var feed_url = $(this).attr('href');
+                    feed_url = feed_url.replace('/articles?','/articles.js?');
+                    console.log(feed_url);
+                    jQuery.ajax(feed_url,
+                        {
+                            dataType : 'jsonp',
+                            success : function(data,textStatus,jqXHR){
+                                var articles = data.articles, article = null;
+                                var $articles = $('#articles');
+                                $('feed_description').html(data.title);
+                                $articles.html('');
+                                for (var i = 0, length = articles.length; i < length; i++) {
+                                    article = articles[i];
+                                    $articles.append('<li>' + '<h3><a href="' + article.url + '">' + article.title + '</a></h3>' + '<p>' + article.snippet + '</p></li>');
+                                }
+                            }
+                        }
+                    );
+                    
+                });
+
+                jQuery.ajax('http://influencehealth.curatasite.com/api/v1/categories.js',
+                    {
+                        dataType : 'jsonp',
+                        success : function(data,textStatus,jqXHR){
+                            console.log('influencehealth success');
+                            var groups = data.groups, group = null, category = null;
+                            var $groups = $('#groups'), $categories = null;
+                            for (var i = 0, length = groups.length; i < length; i++) {
+                                group = groups[i];
+                                $groups.append('<li><h3><a class="feed" href="' + group.feed_url + '">' + group.title + '</a></h3><ul class="categories"></ul></li>');
+                                $categories = $groups.find('ul');
+                                for (var j = 0, jlength = group.categories.length; j < jlength; j++){
+                                    category = group.categories[j];
+                                    $categories.append('<li><a class="feed" href="' + category.feed_url + '">' + category.title + '</a></li>');
+                                }
+                            }
+                        }
+                    });
+
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Using the Curata API with jquery</h1>
+        <p>View source on this page to see a documented example of calling the Curata json-p content API.</p>
+        <div id="example">
+            <div id="left" style="display: inline-block; width:49%;">
+                <h2>Category Groups / Categories</h2>
+                <ul id="groups"></ul>
+            </div>
+            <div id="right" style="display: inline-block; width:49%; vertical-align: top;">
+                <h2 id="feed_description">
+                    (Click on a category to retrieve articles)
+                </h2>
+                <ol id="articles"></ol>
+            </div>
+        </div>
+    </body>
+</html>

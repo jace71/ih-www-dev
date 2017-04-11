@@ -1,0 +1,319 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Invalid API Key"
+msgstr ""
+
+msgid "Allowed only numbers and letters"
+msgstr ""
+
+msgid "Updating"
+msgstr ""
+
+msgid "Updated Successfully"
+msgstr ""
+
+msgid "The field is empty. Please, enter the API Key"
+msgstr ""
+
+msgid "Invalid API Key validation"
+msgstr ""
+
+msgid "Webhook error"
+msgstr ""
+
+msgid "API Key deleted :"
+msgstr ""
+
+msgid "API Key not exist :"
+msgstr ""
+
+msgid "Tags"
+msgstr ""
+
+msgid "Add"
+msgstr ""
+
+#: header.php:2
+msgid "Contently settings"
+msgstr ""
+
+#: main_settings.php:8
+msgid "Publications"
+msgstr ""
+
+#: main_settings.php:10
+msgid "Add new"
+msgstr ""
+
+#: main_settings.php:24 main_settings.php:49
+msgid "Publication"
+msgstr ""
+
+#: main_settings.php:29
+msgid "Open publication"
+msgstr ""
+
+#: main_settings.php:30
+msgid "Close publication"
+msgstr ""
+
+#: main_settings.php:32 main_settings.php:57
+msgid "Delete"
+msgstr ""
+
+#: profile_api_key.php:6 profile_header.php:2
+msgid "API key"
+msgstr ""
+
+#: profile_configure_mapping.php:18
+msgid "All Contently story type"
+msgstr ""
+
+#: profile_configure_mapping.php:61
+msgid "use WP"
+msgstr ""
+
+#: profile_configure_mapping.php:71
+msgid "WP custom fields"
+msgstr ""
+
+#: profile_configure_mapping.php:96
+msgid "Contently custom fields"
+msgstr ""
+
+#: profile_configure_mapping.php:121
+msgid "Please use only lowercase letters"
+msgstr ""
+
+#: profile_configure_mapping.php:123
+msgid "Add new"
+msgstr ""
+
+#: profile_configure_mapping.php:124
+msgid "Close"
+msgstr ""
+
+#: profile_configure_mapping.php:131
+msgid "Advance custom fields plugin"
+msgstr ""
+
+#: profile_configure_mapping.php:134
+msgid "Select ACF Field Group:"
+msgstr ""
+
+
+#: profile_configure_mapping.php:158
+msgid "SEO Yoast plugin fields"
+msgstr ""
+
+#: profile_configure_mapping.php:162
+msgid "SEO title:"
+msgstr ""
+
+#: profile_configure_mapping.php:166
+msgid "Meta description:"
+msgstr ""
+
+
+#: profile_configure_mapping.php:170
+msgid "Focus keyword:"
+msgstr ""
+
+#: profile_configure_mapping.php:180
+msgid "All in One SEO Pack Plugin Fields"
+msgstr ""
+
+#: profile_configure_mapping.php:184
+msgid "Title:"
+msgstr ""
+
+#: profile_configure_mapping.php:188
+msgid "Description:"
+msgstr ""
+
+#: profile_configure_mapping.php:192
+msgid "Keyword:"
+msgstr ""
+
+#: profile_configure_mapping.php:196
+msgid "Robots Meta NOINDEX:"
+msgstr ""
+
+#: profile_configure_mapping.php:202
+msgid "Robots Meta NOFOLLOW:"
+msgstr ""
+
+#: profile_configure_mapping.php:208
+msgid "Robots Meta NOODP:"
+msgstr ""
+
+#: profile_configure_mapping.php:214
+msgid "Robots Meta NOYDIR:"
+msgstr ""
+
+#: profile_configure_mapping.php:220
+msgid "Disable on this page/post:"
+msgstr ""
+
+#: profile_configure_mapping.php:230
+msgid "Cancel"
+msgstr ""
+
+#: profile_configure_mapping.php:232
+msgid "Save"
+msgstr ""
+
+#: profile_footer.php:3
+msgid "Update"
+msgstr ""
+
+#: profile_header.php:3
+msgid "Publishing settings"
+msgstr ""
+
+#: profile_header.php:4
+msgid "Post type mapping"
+msgstr ""
+
+#: profile_post_type_mapping.php:21
+msgid "Map all Contently story types to one specific Wordpress post type"
+msgstr ""
+
+#: profile_post_type_mapping.php:25
+msgid "Map individual types"
+msgstr ""
+
+#: profile_post_type_mapping.php:34 profile_post_type_mapping.php:79
+msgid "Contently story type"
+msgstr ""
+
+#: profile_post_type_mapping.php:37 profile_post_type_mapping.php:82
+msgid "Action"
+msgstr ""
+
+#: profile_post_type_mapping.php:43
+msgid "Select post type"
+msgstr ""
+
+#: profile_post_type_mapping.php:61
+msgid "All types"
+msgstr ""
+
+#: profile_post_type_mapping.php:66 profile_post_type_mapping.php:109
+msgid "Configure mapping"
+msgstr ""
+
+#: profile_post_type_mapping.php:67
+msgid "Please Update Wordpress Post to Configure mapping"
+msgstr ""
+
+#: profile_post_type_mapping.php:76
+msgid "Post type"
+msgstr ""
+
+#: profile_post_type_mapping.php:94
+msgid "select"
+msgstr ""
+
+#: profile_post_type_mapping.php:110
+msgid "Please update Wordpress post type to configure mapping"
+msgstr ""
+
+#: profile_publishing_options.php:16
+msgid "Full name"
+msgstr ""
+
+#: profile_publishing_options.php:17
+msgid "Last name, First name"
+msgstr ""
+
+#: profile_publishing_options.php:18
+msgid "First name only"
+msgstr ""
+
+#: profile_publishing_options.php:19
+msgid "Last name only"
+msgstr ""
+
+#: profile_publishing_options.php:20
+msgid "Numeric ID"
+msgstr ""
+
+#: profile_publishing_options.php:28
+msgid "Set how a story is published between Contently and Wordpress."
+msgstr ""
+
+#: profile_publishing_options.php:31
+msgid "When a planned publish date is set"
+msgstr ""
+
+#: profile_publishing_options.php:39
+msgid "Publish story on the planned publish date/time - it can be edited or rescheduled before it's published."
+msgstr ""
+
+#: profile_publishing_options.php:47
+msgid "Ignore publish date and save story as a draft - will be manually published."
+msgstr ""
+
+#: profile_publishing_options.php:55
+msgid "When a planned publish date is not set"
+msgstr ""
+
+#: profile_publishing_options.php:63
+msgid "Save story as a draft - will be manually published."
+msgstr ""
+
+#: profile_publishing_options.php:71
+msgid "Publish to live site immediately once the story is approved on Contently."
+msgstr ""
+
+#: profile_publishing_options.php:79
+msgid "When revisions are made to an existing story"
+msgstr ""
+
+#: profile_publishing_options.php:87
+msgid "Revisions are saved as a draft and need to be manually republished."
+msgstr ""
+
+#: profile_publishing_options.php:95
+msgid "Save and republish the revisions automatically."
+msgstr ""
+
+#: profile_publishing_options.php:107
+msgid "Choose how an author is assigned to a story."
+msgstr ""
+
+#: profile_publishing_options.php:112
+msgid "Select author"
+msgstr ""
+
+#: profile_publishing_options.php:120
+msgid "Use an existing WP user"
+msgstr ""
+
+#: profile_publishing_options.php:128
+msgid "Create a blocked WP user for Contently users"
+msgstr ""
+
+#: profile_publishing_options.php:138
+msgid "WP user"
+msgstr ""
+
+#: profile_publishing_options.php:142
+msgid "Choose a WP user to be the author for all your content from Contently. Allowed only existing users."
+msgstr ""
+
+#: profile_publishing_options.php:158
+msgid "A blocked user account will be created for each contributor of the story, which means users won't be given login credentials. If there are multiple contributors, the first will be selected since WP only supports one author."
+msgstr ""
+
+#: profile_publishing_options.php:165
+msgid "Name format"
+msgstr ""
+
+#: profile_publishing_options.php:169
+msgid "Select how the author and contributor names are displayed when used in the author or other fields. Only for new users"
+msgstr ""

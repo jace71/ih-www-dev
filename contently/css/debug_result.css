@@ -1,0 +1,135 @@
+* {
+  font-family: myriad, arial, tahoma, verdana, sans-serif; }
+
+h1, h2, h3, h4 {
+  padding-left: 10px;
+  margin: 10px 0; }
+
+button {
+  border: 1px solid #000000; }
+
+.menu {
+  margin-bottom: 10px; }
+  .menu ul {
+    border-bottom: 1px solid #a4a4a4;
+    margin: 0;
+    padding: 0;
+    height: 36px; }
+    .menu ul li {
+      font-size: 27px;
+      padding: 5px 10px;
+      cursor: pointer;
+      width: 100px;
+      display: inline;
+      list-style: none;
+      text-align: center; }
+      .menu ul li.active {
+        background-color: lightgray; }
+      .menu ul li:not(.active):hover {
+        background-color: #f9f9f9; }
+      .menu ul li.right {
+        float: right;
+        padding: 0;
+        width: 120px;
+        padding-top: 3px; }
+      .menu ul li .btn {
+        font-size: 20px;
+        border: 1px solid darkgray;
+        text-decoration: none;
+        background-color: #d4d4d4;
+        color: #393D42;
+        text-align: center;
+        padding: 5px 10px;
+        outline: none; }
+        .menu ul li .btn:hover {
+          background-color: #adadad; }
+
+.container.test {
+  display: none; }
+.container.mapping {
+  display: none; }
+
+table {
+  border: 0;
+  font-size: 14px; }
+  table.common thead tr th {
+    background-color: #eeeeee;
+    border-bottom: 3px solid #dddddd;
+    padding: 10px; }
+  table.common > tbody > tr > td {
+    padding: 2px 10px;
+    border: 0;
+    border-bottom: 1px solid lightblue;
+    text-align: center; }
+    table.common > tbody > tr > td.time {
+      width: 171px; }
+    table.common > tbody > tr > td.instance {
+      width: 100px;
+      font-size: 10px;
+      color: gray; }
+    table.common > tbody > tr > td.type {
+      width: 100px; }
+      table.common > tbody > tr > td.type.info {
+        background-color: #f9f9f9; }
+      table.common > tbody > tr > td.type.network {
+        background-color: lightgreen; }
+      table.common > tbody > tr > td.type.test {
+        background-color: #3c763d;
+        color: white; }
+    table.common > tbody > tr > td.title {
+      text-align: left;
+      color: #000000; }
+  table.common > tbody > tr.new_process:not(:first-child) > td {
+    border-top: 3px solid lightblue; }
+  table.parameters .hidden {
+    height: 20px;
+    overflow: hidden; }
+  table.parameters .toggle-button {
+    width: 20px;
+    height: 19px;
+    text-align: center;
+    float: right;
+    padding: 0; }
+  table.parameters .collapsed {
+    overflow: hidden;
+    width: 100%; }
+  table.parameters tr:last-child td {
+    border-bottom: none; }
+  table.parameters tr td {
+    border-bottom: 1px solid lightgray; }
+    table.parameters tr td:first-child {
+      width: 100px; }
+      table.parameters tr td:first-child span.key_name {
+        float: left; }
+      table.parameters tr td:first-child span.action-buttons {
+        float: right; }
+        table.parameters tr td:first-child span.action-buttons .json-toggle-button {
+          width: 20px;
+          height: 19px;
+          float: right;
+          font-size: 10px; }
+    table.parameters tr td:last-child {
+      padding-left: 10px; }
+
+.template-container {
+  background-color: #fefefe;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #eeeeee;
+  padding: 20px; }
+
+.mapping hr {
+  margin-top: 20px; }
+.mapping table.mapping {
+  margin-left: 20px; }
+  .mapping table.mapping td {
+    padding: 0 20px; }
+  .mapping table.mapping td:not(:first-child) {
+    border-left: 1px solid #eeeeee; }
+  .mapping table.mapping h3 {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0; }
+
+/*# sourceMappingURL=debug_result.css.map */

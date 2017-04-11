@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using the Curata API</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                console.log('Document Ready');
+
+                var startDate = $('#start').text();
+                var endDate = $('#end').text();
+
+                $('#start,#end').hide();
+                
+                jQuery.ajax('http://influencehealth.curatasite.com/api/v1/articles.js?in_category=32&start_publish_time=' + startDate + 'T00:00:00&end_publish_time=' + endDate + 'T00:00:00',
+                    {
+                        dataType : 'jsonp',
+                        success : function(data,textStatus,jqXHR){
+                            var articles = data.articles, article = null;
+                            var $articles = $('#articles');
+                            $('feed_description').html(data.title);
+                            $articles.html('');
+                            for (var i = 0, length = articles.length; i < length; i++) {
+                                article = articles[i];
+                                $articles.append('<li style="clear:left;">' + '<h3><a href="' + article.url + '" target="_blank">' + article.title + '</a></h3><h4><a href="http://' + article.publisher.domain + '" target="_blank">' + article.publisher.name + '</a></h4>' + '<div><p><img src="' + article.image + '" style="float:left;width:250px; margin:0 8px 8px 0;"/>' + article.snippet + '</p><p>' + article.approval_date + '</p><p>' + article.index_date + '</p><p>' + article.pub_date + '</p></div></li>');
+                            }
+                        }
+                    });
+
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Using the Curata API with jquery</h1>
+        <p>View source on this page to see a documented example of calling the Curata json-p content API.</p>
+        <div id="example">
+            <div id="start">2017-03-20</div>
+            <div id="end">2017-03-31</div>
+            <div id="article-holder" style="">
+                <h2 id="feed_description">
+                    (Click on a category to retrieve articles)
+                </h2>
+                <ol id="articles"></ol>
+            </div>
+        </div>
+    </body>
+</html>
