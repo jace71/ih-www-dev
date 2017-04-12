@@ -29,12 +29,13 @@ ul.nav.navbar-nav.text-center li a {
 }
 
 #top-banner.jumbotron {
-    padding: 100px 0 50px;
-    background: url(http://www.influencehealth.com/_assets/images/blog/aee44fc32e47f07b5fe3050745ad94ac.jpg) center center no-repeat;
+    padding: 65px 0 0;
+    /*background: url(http://www.influencehealth.com/_assets/images/blog/aee44fc32e47f07b5fe3050745ad94ac.jpg) center center no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
     position: relative;
     margin: 0;
+    height: 740px;
 }
 
 #top-banner.jumbotron:before {
@@ -52,7 +53,10 @@ ul.nav.navbar-nav.text-center li a {
 .homepage-hero-module {
     border-right: none;
     border-left: none;
-    position: relative;
+    /*position: relative;*/
+    position: absolute;
+    width: 100%;
+    max-height: 100%;
 }
 .no-video .video-container video,
 .touch .video-container video {
@@ -96,140 +100,22 @@ ul.nav.navbar-nav.text-center li a {
 #top-banner.jumbotron .container.overlay {
     color: #fff;
     position: relative;
+    top: 30%;
 }
 
-#top-banner.jumbotron .container.overlay.bottom {
-    margin-top: 32px;
-}
-
-#top-banner.jumbotron .container.overlay .orange {
-    color: #f57f51;
-}
-
-#top-banner > div.container.overlay > div.col-md-8 {
-    padding-right: 100px;
-    margin-bottom: 12px;
-}
-
-#top-banner > div.container.overlay > div.col-md-8 > div.image {
-    margin-bottom: 22px;
-    margin-top: 40px;
-}
-
-#top-banner > div.container.overlay > div.col-md-8 > div.image > img {
-    width: 100%;
-}
-
-#top-banner .under-logo {
-    position: relative;
-}
-
-#top-banner > div:nth-child(1) > div.col-md-8 > div.under-logo > div.left-col {
-    display: inline-block;
-    vertical-align: top;
-}
-
-#top-banner > div:nth-child(1) > div.col-md-8 > div.under-logo > div.left-col > span {
-    display: block;
-    font-size: 25px;
-    text-transform: uppercase;
+#top-banner.jumbotron .container.overlay #video-overlay {
+    text-align: center;
+    font-size: 5em;
+    font-weight: 700;
     line-height: 120%;
-    letter-spacing: 4px;
-    font-family: "Gotham SSm A", "Gotham SSm B";
-    font-style: normal;
-    font-weight: 700;
-}
-
-#top-banner > div:nth-child(1) > div.col-md-8 > div.under-logo > div.left-col > span:first-child {
-    letter-spacing: 5.6px;
-}
-
-#top-banner > div:nth-child(1) > div.col-md-8 > div.under-logo > div.right-col {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 74px;
-    line-height: 79%;
-    font-family: "Gotham SSm A", "Gotham SSm B";
-    font-style: normal;
-    font-weight: 700;
-    position: absolute;
-    right: -4px;
-}
-
-.container.overlay .col-md-4.button {
-    bottom: 58px;
-    position: absolute;
-    display: inline-block;
-}
-
-.overlay-col-header {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 14px;
-    font-style: italic;
-    position: relative;
-    text-align: center;
-    margin: 0 26px;
-}
-
-.overlay-col-header:before {
-    position: absolute;
-    width: 25%;
-    content: "";
-    height: 1px;
-    background-color: #fff;
-    top: 50%;
-    left: 0;
-}
-
-.overlay-col-header:after {
-    position: absolute;
-    width: 25%;
-    content: "";
-    height: 1px;
-    background-color: #fff;
-    top: 50%;
-    right: 0;
-}
-
-.container.overlay.bottom .col-md-4:nth-child(1) .overlay-col-header:before, .container.overlay.bottom .col-md-4:nth-child(2) .overlay-col-header:before {
-    left:47px;
-}
-
-.container.overlay.bottom .col-md-4:nth-child(1) .overlay-col-header:after, .container.overlay.bottom .col-md-4:nth-child(2) .overlay-col-header:after {
-    right: 47px;
-}
-
-.container.overlay.bottom .col-md-4:nth-child(3) .overlay-col-header:before {
-    left:31px;
-}
-
-.container.overlay.bottom .col-md-4:nth-child(3) .overlay-col-header:after {
-    right: 31px;
-}
-
-#top-banner .container.overlay .col-md-4 .big {
-    font-size: 24px;
-    display: block;
-    text-align: center;
-    letter-spacing: 2px;
-}
-
-.num.big span {
-    color: #f57f51;
-}
-
-#top-banner .container.overlay .col-md-4 .small {
-    display: block;
-    font-size: 10px;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .navbar-fixed-bottom, .navbar-fixed-top, .navbar-static-top {
     z-index: 10;
     background-color: #fff;
     background-image: none;
-    border-color: #f57f51;
+    border: none;
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li a {
@@ -328,6 +214,46 @@ nav.navbar .header-logo {
     padding: 8px 10px;
 }
 
+.navbar .input-group .form-control {
+    border-right: none;
+    background:#ccc;
+}
+
+.navbar .input-group .btn-default {
+    background-image: none;
+    border-left: none;
+    background: #ccc;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.navbar .input-group .btn-default:hover {
+    border-color: transparent;
+}
+
+.menu-button-holder {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    width: 200px;
+    color: #fff;
+}
+
+.menu-button-holder .navbar-toggle {
+    display: block;
+    border: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.menu-button-holder .navbar-toggle div {
+    display: inline-block;
+}
+
+/* end navbar */
+
 div#pin1 {
     /*z-index: 100;*/
 }
@@ -341,126 +267,80 @@ div#pin1 {
     padding: 20px 40px;
 }
 
-#signup-countdown {
-    background: #5a595e;
+/* Under video ribbon */
+
+.under-video {
+    background: #2f2933;
+    color: #fff;
+    padding: 50px 0;
 }
 
-#signup-form {
-    background: #dcdcdc;
-    padding: 50px 50px 50px 80px;
+.under-video .button-holder {
     text-align: right;
 }
 
-#signup-form .form-control {
-    width: 500px;
+.under-video .cta-button {
+    padding: 10px 12px;
+    background: #f74a28;
+    color: #fff;
+    font-style: italic;
+    text-decoration: none;
+    display: inline-block;
 }
 
-#countdown {
-    color:#fff;
-    padding: 20px 20px 20px 50px;
-}
+/* Partners ribbon */
 
-#countdown p {
+.partners {
+    padding: 50px 0;
     text-align: center;
 }
 
-#clock {
-    padding: 0 18px;
-}
-
-#clock .col-md-3:before {
-    content: ' : ';
-    position: absolute;
-    top: 2%;
-    right: 0;
-    font-size: 22px;
-}
-
-#clock .col-md-3:last-child:before {
-    content: '';
-}
-
-#clock .num {
+.partners .partner-title {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
     font-size: 20px;
-    text-align: center;
-}
-
-#clock .numlabel {
-    font-size: 14px;
-    text-align: center;
-}
-
-/* wwwstripe */
-
-.container.wwwstripe {
-    background:#e9e9e9;
-    width: 100%;
-}
-
-.container.wwwstripe .when-where-clock .container.overlay.bottom {
-    margin-bottom: 32px;
-}
-
-.container.wwwstripe #clock {
-    padding: 0 30px;
-}
-
-.container.wwwstripe #clock .col-md-3 {
-    padding: 0 4px;
-}
-
-.container.wwwstripe #clock .col-md-3:before {
-    right: -3px;
-    top: -2%;
+    padding: 0 0 28px;
 }
 
 /* "About" ribbon */
 
-.container.about {
-    padding-top: 50px;
-    padding-bottom: 80px;
+.about {
+    padding: 50px 0;
 }
 
-.container .ribbon-head {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 14px;
-    font-style: italic;
+.about .container .left {
+    background: #2bd3c6;
+    padding: 20px;
+}
+
+.about .container .left .about-vid-holder iframe {
+    /*width: 390px;*/
+}
+
+.about .container .right {
+
+}
+
+.about .container .right > div {
+    background: #f2f2f2;
+    margin: 0 0 10px;
+}
+
+.about .container .right > div.bottom {
+    margin-bottom: 0;
+}
+
+.about .container .right > div .overlay {
+    display: block;
     text-align: center;
-    margin: 0 0 40px;
+    padding: 20px;
 }
 
-.container .ribbon-head span {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    display: inline-block;
-    text-align: center;
-    padding: 0 50px;
-    margin: 0 auto;
-    position: relative;
-}
+/* Knowledge to go ribbon */
 
-.container .ribbon-head span:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    height: 1px;
-    background-color: #99886b;
-    width: 40px;
-}
-
-.container .ribbon-head span:after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    height: 1px;
-    background-color: #99886b;
-    width: 40px;
-}
-
-.container .ribbon-head img {
-    width: 150px;
-    margin-left: 4px;
+.homepage-ktg {
+    padding: 50px 0;
 }
 
 /* "Speakers" section */
