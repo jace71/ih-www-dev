@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+    // sidenav control
+    $('.menu-button-holder').click(function(){
+        $('#sidenav').addClass('open');
+    });
+    
     // homepage jumbo video control
     scaleVideoContainer();
 
