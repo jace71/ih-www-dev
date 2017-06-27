@@ -531,13 +531,139 @@ div#pin1 {
 }
 
 #sidenav.open {
-    width: 50%;
+    width: 63%;
+}
+
+#sidenav .container {
+    max-width: 100%;
 }
 
 .sidenav-header {
-
+    padding: 18px 10px;
 }
 
 .sidenav-header > div {
     display: inline-block;
+}
+
+.cxp-band {
+    width: 100%;
+    background:#23d3c6;
+}
+
+.cxp-band .col-md-6 {
+    padding: 18px 0;
+    color: #fff;
+}
+
+.cxp-band .bold-head {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cxp-band .product-name {
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 100%;
+}
+
+.cxp-band .text {
+    font-size: 12px;
+}
+
+.cxp-band .img-wrap {
+    text-align: center;
+}
+
+.cxp-band .img-wrap img {
+    width: 170px;
+}
+
+.cxp-btn-holder {
+    width: 100%;
+}
+
+.cxp-btn-holder .cxp-btn {
+    width: 100%;
+    padding: 16px 8px;
+    color: #fff;
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cxp-btn-holder .cxp-btn:hover {
+    text-decoration: none;
+    background: #00968d;
+}
+
+.cxp-btn-holder .cxp-btn span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-style: italic;
+    display: block;
+    text-transform: capitalize;
+}
+
+.sidenav-content-left {
+    padding-top: 20px;
+}
+
+.sidenav-content h4 {
+    color: #888;
+    font-size: 12px;
+    margin-top: 0;
+}
+
+.sidenav-content .col-md-6 {
+    border-left:2px solid #23d3c6;
+}
+
+.sidenav-content .nav-menu {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.sidenav-content .nav-menu li a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.sidenav-content-left-middle {
+    padding:0;
+}
+
+.sidenav-content-left-middle .img-wrap {
+    margin:20px 0;
+}
+
+.sidenav-content-left-middle img {
+    max-width: 100%;
+}
+
+.sidenav-content-right {
+    padding-top: 20px;
+}
+
+.menu-content {
+    margin-bottom: 30px;
+}
+
+.menu-content .img-wrap img {
+    max-width: 100%;
+}
+
+.menu-content h4 {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 8px 0;
+}
+
+.menu-content .text {
+    font-weight: 300;
+    color: #fff;
+    font-size: 12px;
 }
