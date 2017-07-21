@@ -1,4 +1,10 @@
 $(document).ready(function(){
+    $('ul.nav.navbar-nav li.dropdown').bind('mouseenter', function () {
+                    console.log('mouse entered');
+                    $(this).addClass('open').find('a.dropdown-toggle').data('aria-expanded', 'true');
+                }).bind('mouseleave', function () {
+                    $(this).removeClass('open').find('a.dropdown-toggle').data('aria-expanded', 'true');
+                });
 
     // sidenav control
     $('.menu-button-holder').click(function(){

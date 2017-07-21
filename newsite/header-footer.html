@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        
+        <title>Influence Health</title>
+
+        <!-- Bootstrap -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) http://www.influencehealth.com/_assets/js/jquery.min.js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <!-- !nfluence health custom style and js -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/header-footer.css" />
+        <script src="js/scripts.js"></script>
+
+        <!--fonts-->
+        <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6601532/6933552/css/fonts.css" />
+        <script src="https://use.fontawesome.com/540a466bb7.js"></script>
+
+        <script type="text/javascript">
+        	    // Navigation
+            var touch = "ontouchstart" in window || ("msMaxTouchPoints" in navigator && navigator.msMaxTouchPoints > 0);
+            if (touch) {
+                console.log('touch');
+                $('ul.nav.navbar-nav li.dropdown a.dropdown-toggle').bind('click', function (e) {
+                    e.preventDefault();
+                    if ($(this).parent().hasClass('open')) {
+                        if ($(this).data('href')) {
+                            window.location = $(this).data('href');
+                        }
+                    }
+                });
+                $('ul.nav.navbar-nav li.dropdown a.dropdown-toggle').bind('touchstart', function (e) {
+                    $(this).addClass('open').find('a.dropdown-toggle').data('aria-expanded', 'true');
+                });
+            } else {
+                console.log('not touch');
+                $('ul.nav.navbar-nav li.dropdown a.dropdown-toggle').bind('click', function (e) {
+                    e.preventDefault();
+                    if ($(this).parent().hasClass('open')) {
+                        if ($(this).data('href')) {
+                            window.location = $(this).data('href');
+                        }
+                    }
+                });
+                $('ul.nav.navbar-nav li.dropdown').bind('mouseenter', function () {
+                    console.log('mouse entered');
+                    $(this).addClass('open').find('a.dropdown-toggle').data('aria-expanded', 'true');
+                }).bind('mouseleave', function () {
+                    $(this).removeClass('open').find('a.dropdown-toggle').data('aria-expanded', 'true');
+                });
+            }
+            // Lead Lander
+            var sf14gv = 11400;
+            (function () {
+                var sf14g = document.createElement('script'); sf14g.type = 'text/javascript'; sf14g.async = true;
+                sf14g.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 't.sf14g.com/sf14g.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sf14g, s);
+            })();
+        </script>
+
+    </head>
+    <body>
+    
+        <header id="site-header">
+
+            <div class="header-wrapper container">
+
+                <div class="header-top container-fluid">
+
+                    <div class="head-top-left col-md-7">
+
+                        <img class="header-logo" src="http://www.influencehealth.com/_site-configuration/asset_upload_file63244_11322.png" alt="Influence Health">
+
+                    </div>
+
+                    <div class="head-top-right col-md-5">
+
+                        <ul id="social-media-links" class="social-media-links">
+                            <li>
+                                <a href="https://vimeo.com/user16745977" target="_blank"><img src="http://www.influencehealth.com/_site-configuration/asset_upload_file65855_11322.png" alt="Influence Health Vimeo" border="0" class=""></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/influence-health" target="_blank"><img src="http://www.influencehealth.com/_site-configuration/asset_upload_file82205_11322.png" alt="Influence Health LinkedIn" border="0" class=""></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/InfluenceHlth" target="_blank"><img src="http://www.influencehealth.com/_site-configuration/asset_upload_file59390_11322.png" alt="Influence Health Twitter" border="0" class=""></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/InfluenceHealth" target="_blank"><img src="http://www.influencehealth.com/_site-configuration/asset_upload_file38724_11322.png" alt="Influence Health Facebook" border="0" class=""></a>
+                            </li>
+                            <li>
+                                <a href="tel:855-432-9182" target="_self"></a>
+                            </li>
+                        </ul>
+
+                        <form id="search" action="/sitesearch" method="get" target="_parent" class="active" onsubmit="if (window.navigating) return false">
+                            <input type="text" id="search-box" name="q" placeholder="search" onfocus="this.placeholder=''" onblur="this.placeholder='search'">
+                        </form>
+
+                        <span itemprop="tel" class="header-phone"><a href="tel:888-633-7335" class="bw-phone">888-633-7335</a></span>
+
+                    </div>
+
+                </div><!--end header-bottom-->
+
+                <div class="header-bottom container-fluid">
+
+                    <ul id="topnav" class="nav navbar-nav">
+                        <li id="linkFirstglobal-menu291462" data-assetid="291462" data-asset-path="291462" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '291462';}" class="navbarFirst dropdown"><a href="#" target="_self" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-href="/consumer-experience-platform/default">Consumer Experience Platform <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li id="linkSecondglobal-submenu324101" data-assetid="324101" data-asset-path="25090|324101" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '324101|25090';}" class="navbarSecond"><a href="/consumer-experience-platform/content-management-system" target="_self">Content Management System</a></li>
+                        <li id="linkSecondglobal-submenu285744" data-assetid="285744" data-asset-path="25090|285744" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '285744|25090';}" class="navbarSecond"><a href="/consumer-experience-platform/digital-marketing-system" target="_self">Digital Marketing System</a></li>
+                        <li id="linkSecondglobal-submenu285752" data-assetid="285752" data-asset-path="25090|285752" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '285752|25090';}" class="navbarSecond"><a href="/consumer-experience-platform/healthcare-crm" target="_self">Healthcare CRM</a></li>
+                        </ul>
+                        </li>
+                        <li id="linkFirstglobal-menu300547" data-assetid="300547" data-asset-path="300547" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '300547';}" class="navbarFirst dropdown"><a href="#" target="_self" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-href="/complementary-solutions/default">Complementary Solutions <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li id="linkSecondglobal-submenu213201" data-assetid="213201" data-asset-path="25092|213201" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '213201|25092';}" class="navbarSecond"><a href="/complementary-solutions/healthcare-directory-listings-management" target="_self">Directory Listings Management</a></li>
+                        <li id="linkSecondglobal-submenu213179" data-assetid="213179" data-asset-path="25092|213179" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '213179|25092';}" class="navbarSecond"><a href="/complementary-solutions/healthcare-reputation-management" target="_self">Reputation Management</a></li>
+                        <li id="linkSecondglobal-submenu24029" data-assetid="24029" data-asset-path="25092|24029" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '24029|25092';}" class="navbarSecond"><a href="/complementary-solutions/search-engine-optimization" target="_self">Search Engine Optimization (SEO)</a></li>
+                        <li id="linkSecondglobal-submenu24026" data-assetid="24026" data-asset-path="25092|24026" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '24026|25092';}" class="navbarSecond"><a href="/complementary-solutions/web-strategy-design-services" target="_self">Web Strategy &amp; Design Services</a></li>
+                        <li id="linkSecondglobal-submenu24034" data-assetid="24034" data-asset-path="25092|24034" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '24034|25092';}" class="navbarSecond"><a href="/complementary-solutions/enterprise-patient-portal" target="_self">Enterprise Patient Portal </a></li>
+                        <li id="linkSecondglobal-submenu24035" data-assetid="24035" data-asset-path="25092|24035" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '24035|25092';}" class="navbarSecond"><a href="/complementary-solutions/clinical-portal" target="_self">Clinical Portal</a></li>
+                        </ul>
+                        </li>
+                        <li id="linkFirstglobal-menu25091" data-assetid="25091" data-asset-path="25091" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '25091';}" class="navbarFirst dropdown"><a href="#" target="_self" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-href="/insights/default">Insights  <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li id="linkSecondglobal-submenu193967" data-assetid="193967" data-asset-path="25091|193967" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '193967|25091';}" class="navbarSecond"><a href="/insights/blog" target="_self">Blog</a></li>
+                        <li id="linkSecondglobal-submenu233380" data-assetid="233380" data-asset-path="25091|233380" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '233380|25091';}" class="navbarSecond"><a href="/insights/infographics" target="_self">Infographics</a></li>
+                        <li id="linkSecondglobal-submenu30350" data-assetid="30350" data-asset-path="25091|30350" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '30350|25091';}" class="navbarSecond"><a href="/insights/white-papers" target="_self">White Papers</a></li>
+                        <li id="linkSecondglobal-submenu30399" data-assetid="30399" data-asset-path="25091|30399" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '30399|25091';}" class="navbarSecond"><a href="/insights/client-stories" target="_self">Client Stories</a></li>
+                        <li id="linkSecondglobal-submenu30806" data-assetid="30806" data-asset-path="25091|30806" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '30806|25091';}" class="navbarSecond"><a href="/insights/webinars" target="_self">Webinars</a></li>
+                        <li id="linkSecondglobal-submenu24040" data-assetid="24040" data-asset-path="25091|24040" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '24040|25091';}" class="navbarSecond"><a href="/insights/sample-rfps" target="_self">Sample RFPs</a></li>
+                        </ul>
+                        </li>
+                        <li id="linkFirstglobal-menu23913" data-assetid="23913" data-asset-path="23913" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '23913';}" class="navbarFirst dropdown"><a href="#" target="_self" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-href="/about/default">About <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li id="linkSecondglobal-submenu26978" data-assetid="26978" data-asset-path="23913|26978" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '26978|23913';}" class="navbarSecond"><a href="/about/news" target="_self">News</a></li>
+                        <li id="linkSecondglobal-submenu30759" data-assetid="30759" data-asset-path="23913|30759" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '30759|23913';}" class="navbarSecond"><a href="/about/events" target="_self">Events</a></li>
+                        <li id="linkSecondglobal-submenu286972" data-assetid="286972" data-asset-path="23913|286972" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '286972|23913';}" class="navbarSecond"><a href="/about/leadership-team" target="_self">Leadership Team</a></li>
+                        <li id="linkSecondglobal-submenu24079" data-assetid="24079" data-asset-path="23913|24079" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '24079|23913';}" class="navbarSecond"><a href="/about/board-of-directors" target="_self">Board of Directors</a></li>
+                        <li id="linkSecondglobal-submenu24080" data-assetid="24080" data-asset-path="23913|24080" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '24080|23913';}" class="navbarSecond"><a href="/about/investors" target="_self">Investors</a></li>
+                        <li id="linkSecondglobal-submenu23967" data-assetid="23967" data-asset-path="23913|23967" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '23967|23913';}" class="navbarSecond"><a href="/about/partners" target="_self">Partners </a></li>
+                        <li id="linkSecondglobal-submenu112302" data-assetid="112302" data-asset-path="23913|112302" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '112302|23913';}" class="navbarSecond"><a href="/about/awards" target="_self">Awards</a></li>
+                        <li id="linkSecondglobal-submenu227102" data-assetid="227102" data-asset-path="23913|227102" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '227102|23913';}" class="navbarSecond"><a href="/contact-us/default" target="_self">Contact</a></li>
+                        </ul>
+                        </li>
+                        <li id="linkFirstglobal-menu176380" data-assetid="176380" data-asset-path="176380" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '176380';}" class="navbarFirst dropdown"><a href="#" target="_self" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-href="/career-center/default">Careers <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                        <li id="linkSecondglobal-submenu23969" data-assetid="23969" data-asset-path="23972|23969" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '23969|23972';}" class="navbarSecond"><a href="/career-center/life-at-influence-health" target="_self">Life at Influence Health</a></li>
+                        <li id="linkSecondglobal-submenu23970" data-assetid="23970" data-asset-path="23972|23970" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '23970|23972';}" class="navbarSecond"><a href="/career-center/benefits-and-opportunities" target="_self">Benefits and Opportunities</a></li>
+                        <li id="linkSecondglobal-submenu23971" data-assetid="23971" data-asset-path="23972|23971" onclick="if(typeof localStorage !== 'undefined') {localStorage.activeAsset = '23971|23972';}" class="navbarSecond"><a href="/career-center/referrals" target="_self">Referrals </a></li>
+                        </ul>
+                        </li>
+                    </ul>
+
+                </div><!--end header-bottom-->
+
+            </div><!--end header-wrapper-->
+
+        </header>
+
+    </body>
+
+</html>
