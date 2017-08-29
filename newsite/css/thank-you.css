@@ -1,0 +1,109 @@
+#ih-page-body #section-title .ih-page-title {
+    display: none;
+}
+
+#ih-page-body .row.top-row {
+    padding-bottom: 40px;
+}
+
+#ih-page-body .row.link-row {
+    padding-top: 40px;
+}
+
+#ih-page-body h1 {
+    text-align: center;
+    padding: 40px 10%;
+    color: #333;
+    border: none;
+    text-align: center;
+    font-size: 42px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: none;
+}
+
+#ih-page-body h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    padding: 0 20% 40px;
+    color: #333;
+    text-shadow: none;
+}
+
+#ih-page-body .form-holder {
+    padding: 30px 15%;
+    background: #f9f9f9;
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+#ih-page-body .form-holder p {
+    padding: 0;
+}
+
+#ih-page-body .form-holder iframe {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#ih-page-body .link-row article {
+    position: relative;
+    margin-bottom: 20px;
+    min-height: 270px;
+    padding-bottom: 20px;
+    max-height: 320px;
+}
+
+#ih-page-body .link-row article a {
+    height: initial;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+}
+
+#ih-page-body .link-row article a img {
+    max-width: 100%;
+}
+
+#ih-page-body .link-row article .blog-grid-text {
+    padding: 0;
+}
+
+#ih-page-body .link-row article .blog-grid-text h3 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0 0;
+}
+
+#ih-page-body .link-row article .blog-grid-text h3 a {
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 0;
+    display: inline-block;
+    text-shadow: none;
+}
+
+#ih-page-body .link-row article .blog-grid-text .excerpt {
+    display: none;
+}
+
+#ih-page-body .link-row article .blog-grid-text .excerpt p {
+    color: #8c8c8c;
+    min-height: 125px;
+    font-weight: 100;
+    font-size: 0.8em;
+    line-height: 1.25em;
+}
+
+#ih-page-body .link-row article .blog-grid-text .excerpt a.link-default {
+    display: inline;
+    color: #00ada2;
+    border: none;
+}

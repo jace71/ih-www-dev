@@ -1,0 +1,231 @@
+.press-release .blogMain {
+   padding-top: 25px;
+}
+.press-release a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+.press-release a:hover {
+    color: #333;
+}
+.press-release h2, .press-release .topic-share-wrap {
+    margin-bottom: 15px;
+}
+.press-release h2, .press-release h3, .press-release h4 {
+  color: #000;
+  text-shadow: none;
+}
+.press-release h2, .press-release .topic-share-wrap {
+  margin-bottom: 15px;  
+}
+.press-release .topic-share-wrap h3 {
+  font-weight: 600;
+}
+.press-release .topic-share-wrap h4 {
+  display: inline-block;
+  line-height: 18px;
+  padding-top: 5px;
+}
+.press-release .share-wrap {
+  margin-top: 0;
+}
+.press-release .addthis_sharing_toolbox {
+  position: absolute;
+  right: -2px;
+  top: -38px;
+}
+.link-default:hover {
+  color: #000;
+}
+.press-release article {
+  min-height: auto;
+  margin-bottom: 50px;
+  background-color: transparent;
+}
+
+#blog-post .press-release article {
+  margin-top: 25px;
+}
+
+#blog-post .press-release article h2 {
+   font-weight: 100;
+}
+
+.press-release article.hero {  
+  background-color: #f9f9f9;
+  min-height: auto;
+  padding: 25px;
+}
+.press-release h3 a, .press-release h3 a:visited, .press-release h4 a, .press-release h4 a:visited {
+    color: #00b299;
+}
+.press-release .hero h4, .press-release .excerpt, .press-release article.hero .link-default {
+  margin-top: 15px;
+}
+.press-release .link-default {
+  margin-top: 5px;
+}
+.press-release h3 > a {
+}
+.press-release .excerpt p {
+  font-weight: 100;
+}
+.press-release-title {
+    margin-top: 15px;
+}
+
+.press-release h1.single-blog-title {
+    padding: 40px 0 0;
+}
+
+#blog-post .press-release {
+   margin-top: 50px;
+}
+
+.press-release .text-center {
+    text-align:left;
+}
+
+.press-release .stacked-lg {
+    margin-top:0;
+}
+
+.press-release #blog-index-content {
+    padding-left:12%;
+    padding-right:12%;
+}
+
+.press-release .topic-share-wrap {
+    display:none;
+}
+
+.pressrelease .press-release .main-content {
+    padding: 0 20% 0 0;
+}
+
+.pressrelease .press-release .article-head {
+    margin: 0 0 50px;
+}
+.pressrelease .press-release .article-head-img {
+    display: inline-block;
+    max-width: 42%;
+}
+.pressrelease .press-release .article-head-img img {
+    max-width: 100%;
+    padding-right: 30px;
+    height:inherit;
+}
+.pressrelease .press-release .article-head-text {
+    display: inline-block;
+    vertical-align: bottom;
+    max-width:55%;
+}
+
+#blog-post-content .press-release h2.title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+#blog-post-content .press-release .subtitle {
+    font-size: 18px;
+    font-style: italic;
+    font-family: Georgia, serif;
+    margin-bottom: 8px;
+}
+
+.pressrelease .press-release .article-head-text .date-links .article-date {
+    display: inline-block;
+    font-size:22px;
+}
+.pressrelease .press-release .article-head-text .date-links .article-links {
+    display: inline-block;
+    position:relative;
+    padding:0 0 0 10px;
+    vertical-align:top;
+}
+
+.pressrelease .press-release .addthis_sharing_toolbox {
+    position:initial !important;
+}
+
+#blog-post-content .press-release .article-body p, #blog-post-content .press-release .article-body li {
+    color:inherit;
+    font-size:15px;
+    line-height:23px;
+}
+
+#blog-post-content .press-release .article-body p a {
+    font-size:15px;
+}
+
+#blog-index .stacked-lg {
+    margin-top: 0;
+}
+
+#blog-index .text-center {
+    text-align: left;
+}
+
+@media (max-width:1250px) {
+    .pressrelease .press-release .main-content {
+        padding: 0 10% 0 0;
+    }
+}
+
+@media (max-width:1100px) {
+    .pressrelease .press-release .article-head-text .date-links .article-date {
+        display: block;
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+    .pressrelease .press-release .article-head-text .date-links .article-links {
+        display: block;
+        position: relative;
+        padding: 0;
+    }
+}
+
+@media (max-width:992px) {
+    .pressrelease .press-release .article-head-img {
+        display: block;
+        max-width: 50%;
+    }
+    .pressrelease .press-release .article-head-text {
+        display: block;
+        vertical-align: bottom;
+        max-width: 100%;
+    }
+    .pressrelease .press-release .article-head-text .date-links .article-date {
+        display: inline-block;
+        font-size: 22px;
+        margin-bottom: 0px;
+    }
+    .pressrelease .press-release .article-head-text .date-links .article-links {
+        display: inline-block;
+        position: relative;
+        padding: 0 0 0 10px;
+    }
+}
+
+@media (max-width:768px) {
+    .pressrelease .press-release .article-head-img {
+        max-width:100%;
+    }
+}
+
+@media (max-width:610px) {
+    #blog-index h1, #blog-post.pressrelease h1 {
+        font-size:15px;
+    }
+    .pressrelease .press-release .article-head-text .date-links .article-date {
+        display: block;
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+    .pressrelease .press-release .article-head-text .date-links .article-links {
+        display: block;
+        position: relative;
+        padding: 0;
+    }
+}

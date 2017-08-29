@@ -1,0 +1,66 @@
+#blog-index.thank-you h1 {
+    text-align: center;
+    padding: 40px 10%;
+    color:#333;
+    border:none;
+    text-align:center;
+    font-size:42px;
+    display:block;
+}
+
+#blog-index.thank-you h2 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    padding: 0 20% 40px;
+    color:#333;
+    text-shadow:none;
+}
+#blog-index.thank-you .form-holder {
+    padding: 30px 15%;
+    background: #f9f9f9;
+    text-align: center;
+    margin:0 0 40px;
+}
+#blog-index.thank-you .form-holder iframe {
+    text-align: center;
+    vertical-align:middle;
+}
+
+#blog-index.thank-you .blog-grid {
+    margin-bottom:100px;
+}
+
+#blog-index.thank-you .blog-grid article {
+    background-color:transparent;
+}
+
+#blog-index.thank-you .blog-grid article > a {
+    height: initial;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+}
+
+#blog-index.thank-you .blog-grid-text {
+    padding:0;
+}
+
+#blog-index.thank-you .blog-grid-text h3 {
+    font-size:16px;
+    font-weight:700;
+    text-transform:uppercase;
+    margin:20px 0 0;
+}
+
+#blog-index.thank-you .blog-grid-text h3 a {
+    color:#333;
+    font-size:16px;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+#blog-index.thank-you .blogEnd {
+    display:none;
+}

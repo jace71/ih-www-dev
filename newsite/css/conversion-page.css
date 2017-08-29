@@ -1,0 +1,110 @@
+.conversion-content p {
+    font-size:15px;
+    line-height:140%;
+    margin-bottom:16px;
+}
+
+.conversion-content p strong {
+    font-weight:700;
+    font-size:15px;
+}
+
+#blog-post.conversion-content .post-wrap {
+    padding-bottom:50px;
+    background-color:#2f2933;
+}
+
+#blog-post.conversion-content .post-wrap article, #blog-post.conversion-content .post-wrap article p {
+    color:#fff;
+}
+
+.conversion-content .content-area-standard.full-post {
+    padding:0 2%;
+    max-width:1440px;
+    margin:0 auto;
+}
+
+.conversion-content .content-area-standard.full-post p {
+    padding-bottom:0;
+}
+
+.conversion-content .blog-form-wrap iframe {
+    min-height:350px;
+}
+
+.conversion-content .product-band {
+    padding-left:16%;
+    padding-right:16%;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.conversion-content .product-band .band-wrapper {
+    max-width:1440px;
+    margin: 0 auto;
+}
+
+#product-band-1 .image-holder {
+    text-align:center;
+}
+
+#product-band-2 .image-holder {
+    text-align:center;
+}
+
+.conversion-content .product-band img {
+    max-width:500px;
+}
+
+.conversion-content #product-band-1 {
+    /*background-color:#22d3c5;
+    color:#fff;*/
+    padding-left:2%;
+    padding-right:2%;
+}
+
+.conversion-content #product-band-2 {
+    padding-left:2%;
+    padding-right:2%;
+    background-color:#22d3c5;
+    color:#fff;
+}
+
+.conversion-content #product-band-2 .row .band-wrapper .col-md-6.text-holder {
+    padding-top:0;
+}
+
+.conversion-content#blog-post #blog-footer {
+    padding:50px 2% 0;
+}
+
+.conversion-content .blogEnd {
+    max-width:1440px;
+}
+
+@media (max-width:1200px) {
+    .conversion-content .product-band img {
+        max-width:80%;
+    }
+}
+
+@media (max-width:992px) {
+
+    .conversion-content #product-band-1, .conversion-content #product-band-2, .conversion-content .content-area-standard.full-post, #blog-post.conversion-content #blog-footer {
+        padding-left:8%;
+        padding-right:8%;
+    }
+
+    .conversion-content #product-band-1 img {
+        margin-bottom:50px;
+    }
+
+    .conversion-content #product-band-2 img {
+        margin-top:50px;
+    }
+
+    .conversion-content#blog-post #blog-footer .col-md-4:first-child {
+        margin-top:0;
+    }
+
+}

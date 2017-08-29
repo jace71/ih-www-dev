@@ -1,0 +1,150 @@
+#blog-index .comp-sol-title {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#blog-index .comp-sol-title:after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: #2bd3c6;
+    left: 15px;
+    top: 50%;
+    z-index: 0;
+    right: 0;
+}
+
+#blog-index h2 {
+    color: #2bd3c6;
+    border: 4px solid #2bd3c6;
+    padding: 14px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: #fff;
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    text-shadow: none;
+}
+
+.blog-grid > div {
+    padding: 0 8%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.blog-grid article {
+  background-color: #f9f9f9;
+  position: relative;
+  margin-bottom: 20px;
+  /*min-height: 658px;*/
+  min-height:270px;
+  padding-bottom: 20px;
+  max-height:320px;
+}
+
+.blog-grid article > a {
+  height: 180px;
+  display: block;
+  overflow: hidden;
+}
+
+#blog-index .Events .blog-grid article {
+  min-height:0;
+  padding-bottom:0;
+  background:none;
+}
+
+#blog-index .Events .blog-grid article > a {
+  max-height:150px;
+  border:1px solid #e9e9e9;
+}
+
+#blog-index .Events .blog-grid article > a .img-responsive {
+  max-height:150px;
+  max-width:370px;
+  margin:0 auto;
+}
+
+#blog-index .Events .blog-grid article .blog-grid-text {
+  display:none;
+}
+
+@media screen and (max-width:1280px) {
+  
+ .blog-grid article > a {
+   height:125px;
+ }
+  
+}
+
+.blog-grid-text {
+    padding: 20px 50px 0 50px;
+}
+.blog-grid-text h3 {
+  min-height: 100px;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width:1220px) {
+  
+ .blog-grid-text h3 {
+   font-size:0.75em;
+ }
+  
+}
+
+@media screen and (max-width:991px) {
+  
+  .blog-grid-text h3 {
+     font-size:1.0em;
+   }
+
+  #blog-index .Events .blog-grid article > a .img-responsive {
+    max-height: 100%;
+    width: initial !important;
+  }
+  
+}
+
+.blog-grid-text .excerpt {
+  display:none;
+}
+  
+.blog-grid-text .excerpt p {
+  color: #8c8c8c;
+  min-height: 125px;
+  font-weight: 100;
+  font-size: 0.8em;
+  line-height: 1.25em;
+}
+
+.blog-grid-text .excerpt a {
+  display: block;
+  width: 156px;
+  margin: 15px auto;
+  color: #00ada2;
+  text-align: center;
+}
+
+.blog-grid-footer {
+  padding: 15px 0 0;
+  border-top: 1px solid #646464;
+  margin: 0 20px;
+  display:none;
+}
+
+.blog-grid-footer p {
+  font-size: 0.7em;
+}
+
+.blog-grid-footer p:first-child {
+  padding-bottom: 10px;
+}
+
+.blog-grid-footer p a {
+  font-weight: 500;
+  font-size: inherit;
+}

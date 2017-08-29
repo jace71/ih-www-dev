@@ -1,0 +1,318 @@
+.clinical-connect #blog-post-content {
+    position:relative;
+    background-image:none;
+}
+
+#blog-post.conversion-content.clinical-connect .post-wrap article p {
+    color:initial;
+}
+
+.clinical-connect .full-post p {
+    font-size:16px;
+}
+
+.clinical-connect .blog-form-wrap {
+    border:none;
+}
+
+#blog-post.clinical-connect .post-wrap {
+    padding-bottom:10%;
+    z-index:11;
+    background:transparent;
+    padding-left:16%;
+    padding-right:16%;
+}
+
+.clinical-connect #blog-post .post-wrap {
+    z-index:11;
+    background-color:transparent;
+}
+
+.clinical-connect #blog-post-content article.content-area-standard.full-post {
+    padding:0;
+}
+
+.clinical-connect #blog-post-content article p {
+    color:#000;
+}
+
+.clinical-connect #blog-post-content .screen-bg {
+    position: absolute;
+    width: 100%;
+    height: 465px;
+    top: 18%;
+    background-image: url(/_assets/images/clinicalconnect/screens.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 60% 0px;
+    z-index: 10;
+}
+
+.clinical-connect .product-band {
+    padding: 0 16%;
+}
+
+.clinical-connect #product-band-1 iframe {
+    /*width:400px;
+    height:220px;*/
+}
+
+.clinical-connect #product-band-1 {
+    font-size: 15px;
+    background:#22d3c5;
+    color:#fff;
+    padding-top:150px;
+    padding-bottom:50px;
+    padding-left:16%;
+    padding-right:16%;
+}
+
+.clinical-connect #product-band-1 strong {
+    font-size:16px;
+    line-height:20px;
+    display:block;
+}
+
+.clinical-connect #product-band-1 ul {
+    list-style:disc;
+    font-size:15px;
+    padding-left:20px;
+    margin:8px 0;
+}
+
+.clinical-connect #product-band-1 ul li {
+    font-size:14px;
+    margin:8px 0;
+}
+
+.clinical-connect #product-band-2 {
+    padding-top:50px;
+    padding-bottom:150px;
+    background:url('/_assets/images/clinicalconnect/cc-bg-smiling-doctor.png') 75% 0 no-repeat;
+    background-size:25%;
+    padding-left:16%;
+    padding-right:16%;
+}
+
+#product-band-2 .row .band-wrapper > .col-md-6:first-child {
+    padding-top: 60px;
+}
+
+.clinical-connect #product-band-2 p {
+    font-size:14px;
+    margin-bottom:20px;
+    color:initial;
+}
+
+.clinical-connect #product-band-2 strong {
+    font-size:16px;
+    line-height:20px;
+    display:block;
+    margin-bottom:20px;
+}
+
+.clinical-connect #product-band-2 .overlay {
+    position: absolute;
+    width: 236px;
+    padding: 14px 20px 20px;
+    background: rgba(255,92,74,0.8);
+    color: #fff;
+    right: 0;
+    top: 140px;
+}
+
+.clinical-connect #product-band-2 .little {
+    font-family: georgia;
+    font-style: italic;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.clinical-connect #product-band-2 .big {
+    font-size: 35px;
+    font-weight: 200;
+}
+
+.clinical-connect#blog-post #blog-footer {
+    /*padding-top:111px;*/
+    padding-bottom:0px;
+    padding-left:0;
+    padding-right:0;
+    margin-top:-90px;
+}
+
+.clinical-connect#blog-post #blog-footer #tilt {
+    position: absolute;
+    height: 144px;
+    background: #c0cdd5;
+    left: -8px;
+    top: 60px;
+    transform: rotate(3deg);
+    right: -3px;
+    z-index:0;
+    display:none;
+}
+
+.clinical-connect#blog-post #blog-footer .bg-wrap {
+    background:#c0cdd5;
+    padding:70px 16% 20px;
+    position:relative;
+    z-index:1;
+}
+
+.clinical-connect#blog-post #blog-footer .three-col-head {
+    padding:0 15px 20px;
+    font-size:18px;
+    font-weight:700;
+}
+
+.clinical-connect#blog-post #blog-footer em {
+    font-size:13px;
+    font-weight:600;
+}
+
+.clinical-connect #product-band-3 {
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.clinical-connect #product-band-3 p {
+    font-size:14px;
+    font-style:italic;
+    color:#22d3c5;
+    margin-bottom:12px;
+}
+
+.clinical-connect #product-band-3 p br {
+    line-height:90%;
+}
+
+.clinical-connect #product-band-3 p span {
+    font-family:Georgia, Times, Times New Roman, serif;
+    font-size:14px;
+}
+
+.clinical-connect #product-band-3 p strong {
+    font-weight:600;
+    font-style:normal;
+    font-size:14px;
+}
+
+@media (min-width:1900px) {
+    .clinical-connect #blog-post-content .screen-bg {
+        height:520px;
+        top:15%;
+        background-size:1000px;
+    }
+}
+
+@media (max-width:1899px) {
+    .clinical-connect #blog-post-content .screen-bg {
+        top:17%;
+        background-size:850px;
+    }
+
+@media (max-width:1500px) {
+    .clinical-connect #blog-post-content .screen-bg {
+        top:19%;
+        background-size:725px;
+        background-position:64% 0;
+    }
+
+    .clinical-connect #product-band-2 {
+        background-size:30%;
+    }
+}
+
+@media (max-width:1350px) {
+    .clinical-connect #blog-post-content .screen-bg {
+        top:20%;
+        background-size:625px;
+    }
+}
+
+@media (max-width:1300px) {
+    .clinical-connect #product-band-2 {
+        background-size:30%;
+    }
+}
+
+@media (max-width:1200px) {
+    .clinical-connect #blog-post-content .screen-bg {
+        top:21%;
+        background-size:550px;
+    }
+
+    .clinical-connect #product-band-2 {
+        background-size:40%;
+    }
+
+    .clinical-connect#blog-post #blog-footer {
+        margin-top:-130px;
+    }
+}
+
+@media (max-width:992px) {
+    #blog-post.clinical-connect .post-wrap {
+        padding-bottom: 0px;
+        padding-left:8%;
+        padding-right:8%;
+    }
+
+    #blog-post.clinical-connect .post-wrap .content-area-standard.full-post {
+        padding:0;
+    }
+
+    .clinical-connect #blog-post-content .screen-bg {
+        display:none;
+    }
+
+    .clinical-connect #product-band-1 {
+        padding-top:50px;
+        padding-left:8%;
+        padding-right:8%;
+    }
+
+    .clinical-connect #product-band-2 {
+        background-size:50%;
+        background-position:90% 0;
+        padding-left:8%;
+        padding-right:8%;
+    }
+
+    .clinical-connect #product-band-2 .overlay {
+        top:185px;
+    }
+
+    .clinical-connect#blog-post #blog-footer .bg-wrap {
+        padding-left:8%;
+        padding-right:8%;
+    }
+
+    #blog-footer .additional-content .col-md-4 {
+        margin-bottom:20px;
+    }
+
+    .clinical-connect #product-band-3 {
+        padding-left:8%;
+        padding-right:8%;
+    }
+
+    #product-band-3 .band-wrapper .col-md-6 {
+        margin-bottom:40px;
+    }
+}
+
+@media (max-width:768px) {
+    .clinical-connect #product-band-1 .band-wrapper .col-sm-6:nth-of-type(2) {
+        margin-top:20px;
+    }
+
+    .clinical-connect #product-band-2 {
+        background:none;
+    }
+
+    .clinical-connect #product-band-2 .overlay {
+        display:none;
+    }
+}

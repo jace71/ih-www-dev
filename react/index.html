@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script src="https://unpkg.com/react@15/dist/react.js"></script>
+        <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script> 
+        <script>
+            const App = function(){
+                return React.createElement(
+                    'div',
+                    null,
+                    React.createElement('h2', null, 'My First React Component!'),
+                    React.createElement(MyFirstComponent, {number:'1st'}),
+                    React.createElement(MySecondComponent, {number: '2nd'})
+                );
+            }
+
+            const MyFirstComponent = function(props) {
+                return React.createElement(
+                    'p',
+                    null,
+                    props.number + ': Hello from React!'
+                );
+            }
+
+            const MySecondComponent = function(props) {
+                return React.createElement(
+                    'p',
+                    null,
+                    props.number + ': My Second React Component.'
+                );
+            }
+
+            ReactDOM.render(React.createElement(App), document.querySelector('#app'));
+
+        </script>
+    </body>
+</html>
