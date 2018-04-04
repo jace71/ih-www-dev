@@ -1,3 +1,16 @@
+body {
+  display: none;
+}
+
+#ih-page-body {
+  padding: 0 8%;
+}
+
+#section-title {
+  padding-left:0;
+  padding-right: 0;
+}
+
 #blog-index .comp-sol-title {
     position: relative;
     margin-bottom: 50px;
@@ -30,9 +43,14 @@
 }
 
 .blog-grid > div {
-    padding: 0 8%;
+    padding: 0;
     max-width: 1600px;
     margin: 0 auto;
+}
+
+.blog-grid #section-title + .row {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .blog-grid article {
@@ -49,6 +67,10 @@
   height: 180px;
   display: block;
   overflow: hidden;
+}
+
+.blog-grid article > a img {
+  max-width: 100%;
 }
 
 #blog-index .Events .blog-grid article {
@@ -83,7 +105,8 @@
 .blog-grid-text {
     padding: 20px 50px 0 50px;
 }
-.blog-grid-text h3 {
+
+#ih-page-body.blog-grid .blog-grid-text h3 {
   min-height: 100px;
   font-size: 0.9em;
 }

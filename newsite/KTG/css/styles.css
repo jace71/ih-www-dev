@@ -1,0 +1,201 @@
+body {
+    background:#f1f1f1;
+}
+
+.content {
+    position: relative;
+    max-width: 1440px;
+    margin: 50px auto;
+    padding: 0 8%;
+}
+
+.social-icon-wrapper {
+    position: absolute;
+    top: 0;
+    right: calc(8% - 20px);
+}
+
+.social-icon-wrapper .social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons i {
+    font-size: 20px;
+}
+
+.social-icon-wrapper .social-icons li {
+    padding: 4px 0;
+}
+
+.social-icon-wrapper .social-icons li a {
+    color: #333;
+}
+
+.body-row, .feeds-row {
+    max-width: 1440px;
+    margin: 50px auto;
+    padding:0;
+}
+
+.card {
+    background: url('../images/thumb-FB-banner.jpg');
+    background-size: cover;
+    background-position: center -50px;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.19), 0px 3px 12px 8px rgba(0,0,0,0.23);
+    /* box-shadow: 0 4px 15px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
+}
+
+.card a {
+    display: block;
+    text-decoration: none;
+}
+
+.featured .card .text-holder {
+    width:100%;
+    padding: 350px 0 0;
+}
+
+.card .text-holder .text {
+    background:#fff;
+    padding: 15px 20px;
+    position: relative;
+    border-radius: 0 0 5px 5px;
+}
+
+.card .text-holder .text .type {
+    position: absolute;
+    top: -24px;
+    left:0;
+    background:#008800;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+
+.card .text-holder .text .pubdate {
+    color: #999;
+    font-size: 13px;
+    font-style: italic;
+    padding: 0 0 22px;
+}
+
+.card .text-holder .text .title-holder {
+
+}
+
+.card .text-holder .text .title-holder span {
+    display: block;
+    color: #333;
+    font-size: 15px;
+}
+
+.card .text-holder .text .title-holder h3 {
+    padding: 8px 0 20px;
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.twoxtwo {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.twoxtwo .col-md-6:nth-child(1n+3) {
+    padding-top:28px;
+}
+
+.twoxtwo .card .text-holder {
+    width:100%;
+    padding: 121px 0 0;
+}
+
+.twoxtwo .card .text-holder .text .pubdate {
+    font-size: 11px;
+}
+
+.twoxtwo .card .text-holder .text .title-holder span {
+    font-size: 12px;
+}
+
+.twoxtwo .card .text-holder .text .title-holder h3 {
+    font-size: 16px;
+}
+
+.feed .row-title {
+    padding:10px 15px;
+    color: #2bd3c6;
+    text-transform: uppercase;
+    font-family: "Gotham SSm A", "Gotham SSm B",Arial;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.feed .card .text-holder {
+    width:100%;
+    padding: 200px 0 0;
+}
+
+.row.read-more {
+    text-align: center;
+}
+
+.more-button {
+    margin:20px 0;
+}
+
+.more-button a {
+    text-decoration: none;
+    color: #fff;
+    background:#333;
+    display: inline-block;
+    padding: 10px 28px;
+    transition: all 0.5s;
+}
+
+.more-button a:hover {
+    background:#ccc;
+}
+
+/* insights section landing pages */
+
+.featured-wrap .card {
+    background-position: 150px 0px;
+}
+
+.featured-wrap .card .text-holder {
+    padding:0 66% 0 0;
+}
+
+.featured-wrap .card .text-holder .type {
+    top:0;
+    left:34%;
+    position: absolute;
+    background: #008800;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+
+.featured-wrap .card .text-holder .text {
+    min-height:450px;
+    border-radius: 5px 0 0 5px;
+}
+
+.featured-wrap .card .text-holder .text .pubdate {
+    padding:0 0 100px;
+}
+
+.featured-wrap .card .text-holder .title-holder p {
+    color: #333;
+
+}

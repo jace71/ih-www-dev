@@ -1,0 +1,13 @@
+/* leader detail pages */
+
+.button-holder a {
+    padding: 10px 20px;
+    color: #fff;
+    background: #2bd3c6;
+}
+
+@media (max-width:768px) {
+    img.img-responsive.headshot {
+        padding-bottom: 40px;
+    }
+}

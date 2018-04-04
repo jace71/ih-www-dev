@@ -1,0 +1,56 @@
+.ih-search-refiner .ih-facet h5 {
+    border-bottom: 1px solid #eee;
+    color: #333;
+    text-shadow: none;
+    font-size: 15px;
+}
+
+.ih-search-again .intro {
+    color: #333;
+    font-weight: normal;
+}
+
+.ih-search-again-wrap {
+    width: auto;
+}
+
+.ih-search-again-wrap .input-group .form-control {
+    height:38px;
+    border-radius: 0;
+    z-index: 0;
+}
+
+.ih-search-again-wrap .input-group .input-group-btn .btn {
+    background-color: #2bd3c6;
+    border-color: #2bd3c6;
+    border-radius: 0;
+    z-index: 0;
+}
+
+#ih-page-body .ih-search-results .ih-title {
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+#ih-page-body .ih-search-results .ih-title a, #ih-page-body .ih-search-results .ih-title a:visited {
+    color: #2bd3c6;
+}
+
+#ih-page-body .ih-search-results p {
+    padding-bottom: 20px;
+}
+
+#ih-page-body .pagination>li:first-child>a, #ih-page-body .pagination>li:first-child>span, #ih-page-body .pagination>li:last-child>a, #ih-page-body .pagination>li:last-child>span {
+    border-radius: 0;
+}
+
+#ih-page-body .ih-search-pager .pagination > li > a {
+    color: #2bd3c6;
+    font-size: 18px;
+}
+
+#ih-page-body .ih-search-pager .pagination > .active > a {
+    background-color:#2bd3c6;
+    color: #fff;
+    border-color: #2bd3c6;
+}

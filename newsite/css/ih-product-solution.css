@@ -1,3 +1,9 @@
+/* Hide FOUC */
+
+body {
+    display: none;
+}
+
 /*blue*/
 
 body.population_health  {
@@ -1792,6 +1798,10 @@ a.back, a.learn {
 }
 
 @media (max-width:992px) {
+    #Overview #container-header {
+        padding: 0 8%;
+    }
+
     #InnerSections.capabilities.cod.cxp #Section1 .section-content {
         background-position: center 94%;
         background-size:50%;
@@ -2004,7 +2014,30 @@ a.back, a.learn {
         /***************** CXP Adjustments *************/
 
 .capabilities #Overview.row1 {
-    padding:60px 0;
+    padding:60px 8%;
+}
+
+.capabilities #Overview.row1 #container-header {
+    padding:0;
+}
+
+.capabilities #Overview .section-content.content-area-standard.col-md-6 {
+    padding-left:0;
+}
+
+.capabilities #Overview .col-md-6.form-col {
+    padding-right: 0;
+}
+
+@media (max-width:1100px) {
+    .capabilities #Overview .section-content.content-area-standard.col-md-6, .capabilities #Overview .col-md-6.form-col {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.row2 {
+    padding: 0 8%;
 }
 
 .row2 > .row {
@@ -2014,10 +2047,11 @@ a.back, a.learn {
 }
 
 .row2 img {
-    max-width: 550px;
+    max-width: 100%;
     margin: 0 auto;
-    max-height: 550px;
+    max-height: 100%;
     display: inherit;
+    height: auto;
 }
 
 .row2 h3 {
@@ -2038,6 +2072,7 @@ a.back, a.learn {
 
 .row3 {
     background-color: #2bd3c6;
+    padding:0 8%;
 }
 
 .row3 > .row {
@@ -2069,6 +2104,10 @@ a.back, a.learn {
     color: #333 !important;
 }
 
+.row4 {
+    padding:0 8%;
+}
+
 .row4 > .row {
     max-width: 1600px;
     margin: 0 auto;
@@ -2092,19 +2131,29 @@ a.back, a.learn {
 }
 
 .row4 img {
-    max-width: 550px;
+    max-width: 100%;
     margin: 0 auto;
     max-height: 550px;
     display: inherit;
+    height: auto;
 }
 
 .row5 {
     background-color: #302a34;
+    padding: 0 8%;
 }
 
 .row5 > .row {
     max-width: 1600px;
     margin: 0 auto;
+}
+
+.row5 .row .text-wrap {
+    padding-top:50px;
+}
+
+.row5 .row .img-holder {
+    padding-top: 120px;
 }
 
 .row5 .row > div {
@@ -2118,7 +2167,7 @@ a.back, a.learn {
     text-align: left !important;
     margin-top: 10px;
     text-shadow: none;
-    padding: 60px 0 0;
+    /*padding: 60px 0 0;*/
 }
 
 .row5 p {
@@ -2126,6 +2175,16 @@ a.back, a.learn {
     line-height: 23px;
     padding-bottom: 14px;
     color: #fff;
+}
+
+@media (max-width:1200px) {
+    .row5 .row .img-holder {
+        padding-top: 0;
+    }
+}
+
+.row6 {
+    padding:0 8%;
 }
 
 .row6 > .row {
@@ -2169,6 +2228,14 @@ a.back, a.learn {
   padding:60px 0;
 }
 
+.capabilities.cod #Overview.Row1 .section-content.content-area-standard.col-md-6 {
+    padding-left: 8%;
+}
+
+.capabilities.cod #Overview.Row1 .col-md-6.form-col {
+    padding-right: 8%;
+}
+
 #Overview > div {
   max-width:1600px;
   margin:0 auto;
@@ -2196,7 +2263,7 @@ a.back, a.learn {
 
 .capabilities .Row2 .text-holder {
   background-image:url('http://live-ihcm-ih.cphostaccess.com/assets/images/product-pages/cod_layers.jpg');
-  padding-bottom: 40%;
+  padding-bottom: 30%;
   background-size: 75%;
   background-repeat: no-repeat;
   background-position: right top;
@@ -2268,6 +2335,68 @@ a.back, a.learn {
     text-transform: uppercase;
 }
 
+@media (max-width:1550px) {
+    .capabilities .Row2 .text-holder {
+        background-size: 70%;
+        background-position: right 60%;
+    }
+
+    .capabilities .Row2 .text-holder .quote {
+        padding-right: 65%;
+    }
+}
+
+@media (max-width:1100px) {
+    .capabilities.cod #Overview.Row1 .section-content.content-area-standard.col-md-6 {
+        padding-right: 8%;
+    }
+    .capabilities.cod #Overview.Row1 .col-md-6.form-col {
+        padding-left: 8%;
+    }
+}
+
+@media (max-width:1024px) {
+    .capabilities .Row2 .text-holder {
+        background-size: 70%;
+        background-position: right 70%;
+    }
+}
+
+@media (max-width:992px) {
+    .capabilities .Row2 .module-wrap {
+        padding-bottom: 40px;
+    }
+
+    .capabilities .Row2 .text-holder {
+        background-size: 60%;
+        background-position: right 100%;
+        padding-bottom: 38%;
+    }
+
+    .capabilities .Row2 .text-holder p {
+        padding-right: 0;
+    }
+
+    .capabilities .Row2 .text-holder .quote {
+        padding-right: 60%;
+    }
+}
+
+@media (max-width:850px) {
+    .capabilities .Row2 .text-holder {
+        background-image: none;
+    }
+    .capabilities .Row2 .text-holder .quote {
+        padding-right: 50%;
+    }
+}
+
+@media (max-width:768px) {
+    .capabilities .Row2 .text-holder .quote {
+        padding-right: 20%;
+    }
+}
+
 .capabilities .Row3 {
     background-color: #f9f9f9;
 }
@@ -2334,6 +2463,17 @@ a.back, a.learn {
 
 .capabilities .Row4 .section-content a {
     color: #333 !important;
+}
+
+@media (max-width:992px) {
+    .capabilities.cod .Row4 .section-content {
+        padding-left: 8%;
+    }
+}
+
+@media (max-width:768px) {
+    padding-right: 8%;
+    padding-bottom: 60%;
 }
 
 .capabilities .Row5 {
@@ -2429,6 +2569,10 @@ body.digital_marketing {
 
 .pie-img img {
     max-width: 100%;
+}
+
+#InnerSections.capabilities.cod.dms #Overview h3 {
+    color:#fff;
 }
 
 #InnerSections.capabilities.cod.dms .Row2 .section-content {
@@ -2621,6 +2765,9 @@ body.digital_marketing {
     #InnerSections.capabilities.cod.dms .Row5 .section-content {
         background-position: 86% 56%;
         background-size: 32%;
+    }
+    #InnerSections.capabilities.cod.dms .Row5 .text-holder .col-sm-12:last-child {
+        text-align: center;
     }
 }
 
@@ -2818,6 +2965,56 @@ body.digital_marketing {
         max-width:175px;
         margin: 0 auto;
     }
+}
+
+    /***** CRM update for new site ****/
+
+.crm .row2 .row > div:last-child {
+    text-align: center;
+}
+
+.crm .row2 img {
+    max-width: 90%;
+}
+
+.crm .row3 {
+    background-color: #f9f9f9;
+    padding-bottom: 50px;
+}
+
+.crm .row3 .row > div:last-child {
+    text-align: center;
+}
+
+.crm .row3 img {
+    max-width: 90%;
+    height: initial;
+}
+
+.crm .row4 {
+}
+
+.crm .row5 {
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+
+.crm .row5 .img-holder {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.crm .row5 .img-holder img {
+    max-width: 70%;
+    height: auto;
+}
+
+.crm .row5 .text-holder {
+    padding: 20px 20px 0;
+}
+
+.crm .row5 p {
+    color: #2f2a34;
 }
 
 /******** Complementary Solutions pages ********/
@@ -3030,6 +3227,7 @@ body.digital_marketing {
     background-image: url(http://live-ihcm-ih.cphostaccess.com/assets/images/product-pages/dlm-row2-bg.png);
     background-position: top center !important;
     background-size: cover !important;
+    background-repeat: no-repeat;
 }
 
 #InnerSections.dlm .Row2 .section-content.content-area-standard {
@@ -3039,7 +3237,7 @@ body.digital_marketing {
 }
 
 #InnerSections.dlm .Row2 .section-content.content-area-standard .text-holder {
-    padding:0 20% 0 35px;
+    padding:0 0 0 35px;
     background-image: none;
 }
 
@@ -3093,9 +3291,11 @@ body.digital_marketing {
 }
 
 @media (max-width:992px) {
-    #InnerSections.dlm .Row3 .section-content.content-area-standard {
+    #InnerSections.dlm .Row3 > .row {
         background-position: 108% 94% !important;
         background-size: 70% !important;
+    }
+    #InnerSections.dlm .Row3 .section-content.content-area-standard {
         padding: 100px 8% 30% !important;
     }
 }
@@ -3140,8 +3340,6 @@ body.digital_marketing {
         width:100%;
     }
 }
-
-
 
 #InnerSections.dlm .Row5 {
     background-color: #f9f9f9;
@@ -3192,6 +3390,9 @@ body.digital_marketing {
     #InnerSections.dlm .Row5.section-content.content-area-standard .img-holder {
         width:100%;
     }
+    #InnerSections.dlm .Row5 .section-content.content-area-standard img {
+        max-width: 100%;
+    }
 }
 
 /******** Reputation Management page ************/
@@ -3201,14 +3402,14 @@ body.digital_marketing {
     float:left; 
 }
 
-#InnerSections.rm #Section1 .section-content.content-area-standard {
+#InnerSections.rm .Row2 .section-content.content-area-standard {
     background-position: 38% 70% !important;
     padding: 150px 0 !important;
     background-size: 70%;
     float:left;
 }
 
-#InnerSections.rm #Section1 .section-content.content-area-standard .text-holder {
+#InnerSections.rm .Row2 .section-content.content-area-standard .text-holder {
     padding-bottom:200px;
     padding-right:16%;
 }
@@ -3217,31 +3418,8 @@ body.digital_marketing {
     color: #fff;
 }
 
-#InnerSections.rm #Section1 .section-content.content-area-standard .text-holder p {
+#InnerSections.rm .Row2 .section-content.content-area-standard .text-holder p {
     font-size:15px;
-}
-
-@media (min-width:1400px) {
-    #InnerSections.rm #Section1 .section-content.content-area-standard {
-        background-size:60%;
-    }
-}
-
-@media (min-width:1700px) {
-    #InnerSections.rm #Section1 .section-content.content-area-standard {
-        background-position: 38% 70% !important;
-        background-size: 50%;
-    }
-}
-
-@media (min-width:2000px) {
-    #InnerSections.rm #Section1 .section-wrap {
-        padding-bottom:50px !important;
-    }
-
-    #InnerSections.rm #Section1 .section-content.content-area-standard {
-        background-size:38%;
-    }
 }
 
 #InnerSections.rm #Section2 .section-wrap {
@@ -3257,6 +3435,7 @@ body.digital_marketing {
     background-repeat: no-repeat;
     max-width: 1600px;
     margin: 0 auto;
+    float: none;
 }
 
 #InnerSections.rm .Row2 .section-content.content-area-standard .text-holder {
@@ -3274,6 +3453,53 @@ body.digital_marketing {
 #InnerSections.rm .Row2 .section-content.content-area-standard p {
     font-size:15px;
     padding: 0;
+}
+
+@media (min-width:993px) {
+    #InnerSections.rm .Row2 .section-content.content-area-standard {
+        padding: 60px 8% 25% !important;
+        background-position: 32% 75% !important;
+        background-size: 65%;
+    }
+    #InnerSections.rm .Row2 .section-content.content-area-standard .text-holder {
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width:1200px) {
+    #InnerSections.rm .Row2 .section-content.content-area-standard {
+        padding-top: 60px !important;
+        background-size: 60%;
+        background-position: 35% 55% !important;
+    }
+    #InnerSections.rm .Row2 .section-content.content-area-standard .text-holder {
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width:1400px) {
+    #InnerSections.rm .Row2 .section-content.content-area-standard {
+        background-size: 55%;
+        background-position: 35% 41% !important;
+    }
+}
+
+@media (min-width:1700px) {
+    #InnerSections.rm .Row2 .section-content.content-area-standard {
+        background-position: 38% 70% !important;
+        background-size: 64%;
+        padding-top: 150px !important;
+    }
+}
+
+@media (min-width:2000px) {
+    #InnerSections.rm .Row2 .section-wrap {
+        padding-bottom:50px !important;
+    }
+
+    #InnerSections.rm .Row2 .section-content.content-area-standard {
+        background-size:65%;
+    }
 }
 
 #InnerSections.rm #Section2 .section-content.content-area-standard .img-holder img {
@@ -3333,10 +3559,6 @@ body.digital_marketing {
     text-align: left;
 }
 
-#InnerSections.rm .Row4 .section-content.content-area-standard .text-holder {
-    
-}
-
 #InnerSections.rm .Row4 .section-content.content-area-standard p {
     font-size:15px;
     color: #2f2a34;
@@ -3382,13 +3604,13 @@ body.digital_marketing {
 }
 
 @media (max-width:992px) {
-    #InnerSections.rm #Section1 .section-content.content-area-standard {
+    #InnerSections.rm .Row2 .section-content.content-area-standard {
         padding:50px 8% 100px !important;
         background-size:80% auto !important;
         background-position: 30% 90% !important;
     }
 
-    #InnerSections.rm #Section1 .section-content.content-area-standard .text-holder {
+    #InnerSections.rm .Row2 .section-content.content-area-standard .text-holder {
         padding-bottom:73%;
         padding-right:15px;
     }
@@ -3411,26 +3633,27 @@ body.digital_marketing {
         padding-top:20px;
     }
 
-    #InnerSections.rm #Section4 .section-content.content-area-standard {
+    #InnerSections.rm .Row5 .section-content.content-area-standard {
         padding-top:100px;
         padding-bottom:100px;
     }
     
-    #InnerSections.rm #Section4 .section-content.content-area-standard h3 {
+    #InnerSections.rm .Row5 .section-content.content-area-standard h3 {
         max-width:100%;
         padding:0 15px 12px;
     }
 
-    #InnerSections.rm #Section4 .section-content.content-area-standard .img-holder {
+    #InnerSections.rm .Row5 .section-content.content-area-standard .img-holder {
         padding-left:15px;
     }
 
-    #InnerSections.rm #Section4 .section-content.content-area-standard .text-holder {
+    #InnerSections.rm .Row5 .section-content.content-area-standard .text-holder {
         padding-top:20px;
     }
 
-    #InnerSections.rm #Section4 .section-content.content-area-standard .text-holder p {
+    #InnerSections.rm .Row5 .section-content.content-area-standard .text-holder p {
         text-align:left !important;
+        padding-right: 10%;
     }
 }
 
@@ -3559,6 +3782,13 @@ body.digital_marketing {
     background-color:#aaa;
 }
 
+@media (max-width:1200px) {
+    .comp-sol-home h3 a, .services-home h3 a {
+        margin:5px 0 0;
+        display: table;
+    }
+}
+
 @media (max-width:768px) {
     .solutions #SolutionHighlights > .section-content.content-area-standard {
         padding-left:8%;
@@ -3622,10 +3852,10 @@ body.digital_marketing {
 }
 
 .epp .overview h3, .cp .overview h3, .services .overview h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
     font-style: italic;
     margin-bottom: 30px;
-    font-size: 18px;
+    font-size: 18px !important;
     text-shadow: none;
     color: inherit;
     text-align: left;
@@ -3825,6 +4055,15 @@ body.digital_marketing {
     line-height: 140%;
 }
 
+@media (max-width:992px) {
+    .epp .row1 {
+        background-image: url('http://live-ihcm-ih.cphostaccess.com//assets/images/product-pages/People_small-width.jpg') !important;
+        background-size: 100%;
+        background-position: bottom center;
+        padding: 100px 8% 45%;
+    }
+}
+
 .epp .row2 {
     background-image: url('http://live-ihcm-ih.cphostaccess.com//assets/images/product-pages/patient-portal-row2-bg.png');
     background-repeat: no-repeat;
@@ -3852,6 +4091,15 @@ body.digital_marketing {
     font-size: 15px;
     padding-bottom: 12px;
     line-height: 140%;
+}
+
+@media (max-width:992px) {
+    .epp .row2 {
+        padding: 100px 8% 58%;
+        background-image: url('http://live-ihcm-ih.cphostaccess.com//assets/images/product-pages/Woman-on-Laptop.jpg') !important;
+        background-size: 100%;
+        background-position: bottom center;
+    }
 }
 
 .epp .row3 {
@@ -3950,7 +4198,18 @@ body.digital_marketing {
     position: absolute;
     top: 0;
     width: 40%;
-    left: 120px;
+    left: 100px;
+}
+
+@media (max-width:992px) {
+    .epp .row5 > .row > div {
+        padding-top: 0; 
+    }
+    .epp .row5 img {
+        width: 70%;
+        left: 8%;
+        position: relative;
+    }
 }
 
 /********* Clinical Portal *************/
@@ -4443,12 +4702,37 @@ body.digital_marketing {
     font-size: 15px;
     padding-bottom: 12px;
     line-height: 140%;
+    color: inherit !important;
 }
 
 .seo .row1 .img-holder img {
     max-width: 100%;
     margin: 0 auto;
     display: initial;
+}
+
+@media (max-width:1600px) {
+    .seo .row1 {
+        background-position: 38% 0;
+        background-size: auto 100%;
+    }
+}
+
+@media (max-width:1200px) {
+    .seo .row1 {
+        background-position: 38% bottom;
+        background-size: auto 87%;
+        background-color: #7ae5dd;
+    }
+}
+
+@media (max-width:992px) {
+    .seo .row1 {
+        background-size: 100%;
+        background-position: bottom center;
+        padding: 100px 8% 25% !important;
+        background-color: #7ae5dd;
+    }
 }
 
 .seo .row2 {
@@ -4619,6 +4903,8 @@ body.digital_marketing {
     margin: 0 auto;
     display: initial;
 }
+
+/* Web strategy update */
 
 #ih-page-body.ws {
     background-color: #f9f9f9;
@@ -4846,6 +5132,24 @@ body.digital_marketing {
     top: 0;
     left: 8%;
     width: 42%;
+}
+
+@media (max-width:1300px) {
+    .ws .row5 img {
+        top: 150px;
+    }
+}
+
+@media (max-width:992px) {
+    .ws .row5 > .row > div {
+        padding-top:0;
+    }
+    .ws .row5 img {
+        position: relative;
+        width: 80%;
+        left: 8%;
+        top: 0;
+    }
 }
 
 .ws .row6 {

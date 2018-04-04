@@ -1,3 +1,19 @@
+body {
+    /* display: none; */
+}
+
+#customList {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    /*float: left;*/
+    width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
 #blog-index .comp-sol-title {
     position: relative;
     margin-bottom: 50px;
@@ -29,7 +45,7 @@
     text-shadow: none;
 }
 
-.blog-grid > div {
+.blog-grid > div, #ih-page-body > div {
     padding: 0 8%;
     max-width: 1600px;
     margin: 0 auto;
@@ -52,6 +68,7 @@
   padding: 8px 8px 20px;
   border-bottom: 16px solid #f9f9f9;
   transition: all 300ms ease-out;
+  margin-bottom: 30px;
 }
 
 .blog-grid-text:hover {
@@ -88,6 +105,12 @@
   display:none;
 }
 
+@media (max-width:1550px) {
+    #customList {
+        width: 990px;
+    }
+}
+
 @media screen and (max-width:1280px) {
   
  .blog-grid article > a {
@@ -109,6 +132,12 @@
   
 }
 
+@media (max-width:1140px) {
+    #customList {
+        width: 660px;
+    }
+}
+
 @media screen and (max-width:991px) {
   
   .blog-grid-text h3 {
@@ -120,6 +149,12 @@
     width: initial !important;
   }
   
+}
+
+@media (max-width:768px) {
+    #customList {
+        width: 330px;
+    }
 }
 
 .blog-grid-text .excerpt {

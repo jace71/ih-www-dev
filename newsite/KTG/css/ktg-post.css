@@ -1,0 +1,145 @@
+body {
+    background:#f1f1f1;
+}
+
+.post-wrapper {
+    position: relative;
+    max-width: 1440px;
+    margin: 50px auto;
+    padding: 0 8%;
+}
+
+.post-header {
+
+}
+
+.post-header .content-type {
+    display: inline-block;
+    border: 3px solid #2bd3c6;
+    text-transform: uppercase;
+    padding: 4px 6px;
+    color: #2bd3c6;
+    font-weight: 700;
+}
+
+.post-header .post-date {
+    display: inline-block;
+    padding: 0 0 0 10px;
+    color:#888;
+}
+
+.post-header .post-date .read-time {
+
+}
+
+.post-header .post-title {
+    max-width: 66%;
+    font-family: "Gotham Narrow A", "Gotham Narrow B", Arial;
+    font-size: 28px;
+    padding: 20px 0 0;
+    line-height: 130%;
+}
+
+.post-body {
+
+}
+
+.img-wrap {
+    width: 100%;
+    display: inline-block;
+    padding: 20px 0;
+}
+
+.img-wrap .img-holder {
+    max-width: 85%;
+    display: inline-block;
+}
+
+.img-wrap .img-holder img {
+    max-width: 100%;
+}
+
+.social-icon-wrapper {
+    max-width: 10%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 0 20px;
+}
+
+.social-icon-wrapper .social-icons {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+}
+
+.social-icon-wrapper .social-icons li {
+    text-align: center;
+    padding: 4px 0;
+}
+
+.social-icon-wrapper .social-icons li a {
+    color: #333;
+}
+
+.post-content {
+    margin: 0 -15px;
+    max-width: 85%;
+}
+
+.post-content .text-wrapper {
+
+}
+
+.post-content .text-wrapper p {
+    line-height: 160%;
+}
+
+.post-content .text-wrapper .body-img {
+    max-width: 50%;
+    float: left;
+    padding: 0 12px 8px 0;
+}
+
+.post-content .text-wrapper blockquote {
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 24px;
+    color: #2bd3c6;
+    border: none;
+    padding: 25px 0;
+    position: relative;
+    text-indent: 30px;
+}
+
+.post-content .text-wrapper blockquote:before {
+    content: '"';
+    font-size: 42px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    left: -30px;
+}
+
+.author-wrapper {
+    padding: 0 0 0 20px;
+}
+
+.author-wrapper img {
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+}
+
+.author-wrapper .author-info {
+    padding: 16px 0 0;
+}
+
+.author-wrapper .author-info .author-name {
+    font-family: "Gotham Narrow A", "Gotham Narrow B", Arial;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.author-wrapper .author-info .author-title {
+    font-family: "Gotham Narrow A", "Gotham Narrow B", Arial;
+    font-size: 14px;
+}

@@ -394,7 +394,7 @@ footer {
 
 div#container-fat-footer {
 	background-color: transparent;
-	min-height: 300px;
+	/*min-height: 300px;*/
 	border-top: none;
 }
 
@@ -1084,6 +1084,7 @@ h4 a,
   
   ul#social-media-links li {
     float:none;
+    display: inline-block;
   }
   
   #search-box {

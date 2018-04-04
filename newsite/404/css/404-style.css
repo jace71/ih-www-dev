@@ -1,0 +1,32 @@
+.content {
+    padding:100px 16%;
+}
+
+.video-container {
+    padding: 0;
+    position: relative;
+}
+
+video {
+    max-width: 100%;
+}
+
+.text-wrapper {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    max-width: 40%;
+}
+
+.text-wrapper h2 {
+    font-family: "Gotham Narrow A", "Gotham Narrow B", Arial;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.text-wrapper .text-content p {
+    font-family: "Gotham Narrow A", "Gotham Narrow B", Arial;
+    font-size: 18px;
+}
+

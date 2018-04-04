@@ -6,7 +6,7 @@ $(document).ready(function(){
 
     $('#start,#end').hide();
     
-    jQuery.ajax('http://influencehealth.curatasite.com/api/v1/articles.js?in_category=32&start_approval_time=' + startDate + 'T00:00:00&end_approval_time=' + endDate + 'T00:00:00',
+    jQuery.ajax('https://influencehealth.curatasite.com/api/v1/articles.js?in_category=32&start_approval_time=' + startDate + 'T00:00:00&end_approval_time=' + endDate + 'T00:00:00',
         {
             dataType : 'jsonp',
             success : function(data,textStatus,jqXHR){
